@@ -4,21 +4,32 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Générateur de Dé Synthwave</title>
+   <title>Synth-dice</title>
    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-   <div class="container">
-      <h1>Générateur de Dé Synthwave</h1>
-      <div id="diceResult" class="dice-result">?</div>
-      <div class="controls">
-         <label for="faceCount">Nombre de faces :</label>
-         <input type="number" id="faceCount" min="2" max="100" value="6">
-         <button id="rollButton">Lancer le dé</button>
+   <main>
+      <div class="container">
+         <h1>Synth-dice</h1>
+         <!-- Affichage du résultat du dé -->
+         <!-- Display of the dice result -->
+         <div id="diceResult" class="dice-result">?</div>
+         <div class="controls">
+            <!-- Sélection du nombre de faces du dé -->
+            <!-- Selection of the number of dice faces -->
+            <label for="faceCount">Nombre de faces :</label>
+            <input type="number" id="faceCount" min="2" max="100" value="6">
+            <!-- Bouton pour lancer le dé -->
+            <!-- Button to roll the dice -->
+            <button id="rollButton">Lancer le dé</button>
+         </div>
       </div>
-   </div>
-   <script src="scripts.js"></script>
+   </main>
+   <script src="./scripts/diceConfig.js"></script>
+   <script src="./scripts/diceAnimation.js"></script>
+   <script src="./scripts/diceValidation.js"></script>
+   <script src="./scripts/main.js"></script>
 </body>
 
 </html>
